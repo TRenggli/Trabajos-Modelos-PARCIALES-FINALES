@@ -1,0 +1,37 @@
+Incluimos las bibliotecas stdio.h y stdlib.h para poder utilizar funciones de entrada y salida estándar y funciones de gestión de memoria dinámica, respectivamente.
+
+Definimos la estructura Operario que representa los datos de un empleado.
+
+Creamos una función listarDatos que recibe como parámetros un arreglo de Operario y el número de empleados. Esta función muestra en pantalla todos los datos de los empleados almacenados en el arreglo.
+
+Creamos una función altaOperario que recibe como parámetros un arreglo de Operario y un puntero al número de empleados. Esta función permite ingresar los datos de un nuevo operario y agregarlo al arreglo.
+
+Creamos una función calcularImporte que recibe como parámetros un arreglo de Operario y el número de empleados. Esta función calcula el importe a cobrar por cada operario multiplicando el sueldo por las horas trabajadas y lo guarda en el campo correspondiente del arreglo.
+
+Creamos una función eliminarOperario que recibe como parámetros un arreglo de Operario, un puntero al número de empleados y el apellido del operario a eliminar. Esta función busca un operario por su apellido y lo marca como inactivo en el arreglo.
+
+En la función main, declaramos un arreglo de Operario llamado empleados con capacidad para 20 empleados y una variable numEmpleados inicializada en 10.
+
+Cargamos los datos iniciales de los empleados en el arreglo empleados.
+
+Creamos una variable opcion para almacenar la opción seleccionada en el menú.
+
+Creamos una variable apellido para almacenar el apellido del operario a eliminar.
+
+Iniciamos un bucle do-while que se repetirá hasta que la opción seleccionada sea 0 (salir).
+
+Dentro del bucle, mostramos el menú en pantalla y solicitamos al usuario que ingrese una opción.
+
+Utilizamos una estructura switch para ejecutar el código correspondiente a la opción seleccionada.
+
+En el caso 1, llamamos a la función listarDatos pasando como argumentos el arreglo empleados y numEmpleados.
+
+En el caso 2, llamamos a la función altaOperario pasando como argumentos el arreglo empleados y la dirección de memoria de numEmpleados.
+
+En el caso 3, llamamos a la función calcularImporte pasando como argumentos el arreglo empleados y numEmpleados.
+
+En el caso 4, solicitamos al usuario que ingrese el apellido del operario a eliminar y luego llamamos a la función eliminarOperario pasando como argumentos el arreglo empleados, la dirección de memoria de numEmpleados y el apellido ingresado.
+
+En el caso 0, mostramos un mensaje de salida y finalizamos el programa.
+
+Fuera del bucle, retornamos 0 para indicar que el programa se ejecutó correctamente.
